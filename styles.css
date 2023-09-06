@@ -1,0 +1,179 @@
+body {
+    text-align: center;
+    background-color: #CAEDFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #79155B;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+  }
+  
+  .w {
+    background-image: url("images/tom1.png");
+  }
+  
+  .a {
+    background-image: url("images/tom2.png");
+  }
+  
+  .s {
+    background-image: url("images/tom3.png");
+  }
+  
+  .d {
+    background-image: url("images/tom4.png");
+  }
+  
+  .j {
+  
+    background-image: url("images/crash.png");
+  }
+  
+  .k {
+  
+    background-image: url("images/kick.png");
+  }
+  
+  .l {
+    background-image: url("images/snare.png");
+  }
+  
+  .set {
+    /* margin: 10% auto; */
+    margin-bottom: 20px;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .drum {
+    outline: none;
+    font-size: 3rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #f10784;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    cursor:pointer;
+  }
+  .container
+  {
+    height:400px;
+    width:80%;
+    background-color: #FFC7EA;
+    border-radius: 10px;
+    border: 7px solid #79155B;
+  }
+
+  @keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  #title {
+    font-size: 5rem;
+    color: #79155B;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    animation: jump 1s infinite;
+  }
+
+.button.drum {
+  transition: transform 0.2s ease;
+}
+
+.button.drum:active {
+  transform: translateY(-10px); 
+}
+
+@media(max-width:600px){
+  .container
+  {
+    height:50%;
+    width:100%;
+    background-color: #FFC7EA;
+    border-radius: 10px;
+    border: 7px solid #79155B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 50px;
+    color: #79155B;
+    font-family: 'Dancing Script', cursive;
+  }
+  @keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  #title {
+    font-size: 2rem;
+    color: #79155B;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    animation: jump 1s infinite;
+  }
+  .drum {
+    outline: none;
+    font-size: 2rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #f10784;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    cursor:pointer;
+  }
+
+}
+
