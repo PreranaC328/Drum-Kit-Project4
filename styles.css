@@ -6,6 +6,8 @@ body {
     align-items: center;
     height:100vh;
     background-image: url('images/light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   h1 {
@@ -87,12 +89,14 @@ body {
   }
   .container
   {
-    height:400px;
+    height:500px;
     width:80%;
     background-color: #FFC7EA;
     border-radius: 10px;
     border: 7px solid #79155B;
     background-image: url('images/back.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
   }
 
   @keyframes jump {
