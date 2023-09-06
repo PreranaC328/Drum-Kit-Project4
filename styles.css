@@ -92,6 +92,7 @@ body {
     background-color: #FFC7EA;
     border-radius: 10px;
     border: 7px solid #79155B;
+    background-image: url('images/back.jpg');
   }
 
   @keyframes jump {
@@ -108,7 +109,7 @@ body {
   
   #title {
     font-size: 5rem;
-    color: #79155B;
+    color: #d7bbcf;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     animation: jump 1s infinite;
